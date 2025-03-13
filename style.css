@@ -5,11 +5,76 @@
 
 header{
     display: flex;
+    padding: 5px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    border: solid 5px black;
 }
 
 header img {
     width: 20%;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    border:solid 3px black;
+    box-shadow: 5px 5px white;
+    padding: 0 5px;
+    margin: 5px 15px;
+}
+
+header a:hover {
+    color: white;
+    border:solid 3px white;
+    box-shadow: 5px 5px gray;
+    padding: 0 5px;
+}
+
+header a:active {
+    color: rgb(170, 170, 170);
+    border:solid 3px gray;
+    margin-left: 5px;
+    margin: 5px; 
+    box-shadow: 0 0;
+    padding: 0 5px;
+}
+
+header a:visited {
+    color: #056921;
+}
+
+.locations_container, 
+.events_container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.location, 
+.event {
+    width: 30%;
+    margin: 0 5px;
+}
+
+.event {
+    border: solid 5px black;
+    padding: 5px;
+}
+
+.location h3,
+.event p,
+.event h3{
+    text-align: center;
+}
+
+.location img,
+.event img {
+    background-color: rgb(56, 56, 56);
+    width: 100%;
+    border-radius: 10px;
 }
