@@ -115,10 +115,24 @@ footer nav a{
 }
 
 @media screen and (max-width: 1024px ){
+    header{
+        padding: 1rem;
+        flex-direction: column;
+    }
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header img {
+        width: 50%;
+    }
+
     h2 {
         border-bottom: .25rem double black;
     }
-
 
     h2, h3, p {
         text-align: center;
